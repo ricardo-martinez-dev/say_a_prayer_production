@@ -1,6 +1,6 @@
 # Say a Prayer
 
-- https://myprayers.ricardomartinez.de/
+Application address: https://myprayers.ricardomartinez.de/
 
 "Say a Prayer" is a social media application made especially with religious people in mind.
 
