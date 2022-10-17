@@ -19,7 +19,7 @@ const corsOptions = {
   origin:
     process.env.ENVIRONMENT === "dev"
       ? "*"
-      : "https://myprayers.ricardomartinez.de",
+      : "",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
