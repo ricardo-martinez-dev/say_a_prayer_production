@@ -44,4 +44,3 @@ Simply create your account and start interacting with other users
 - due to hiding some of the code, running on your local machine will not work. Please, visit https://myprayers.ricardomartinez.de/ instead
 
 
-[dill]: <https://myprayers.ricardomartinez.de/>
