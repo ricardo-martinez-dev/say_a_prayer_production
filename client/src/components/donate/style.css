@@ -1,0 +1,85 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#donate {
+  color: var(--body-color);
+}
+#donate #donation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  background: var(--elem-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 60rem;
+}
+#donate #donation h2#msg,
+#donate #donation p#msg {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: var(--elem-color);
+  display: flex;
+  justify-content: space-around;
+}
+#donate #donation p#msg {
+  margin-bottom: 3rem;
+  line-height: 3.5rem;
+}/*# sourceMappingURL=style.css.map */

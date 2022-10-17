@@ -1,0 +1,93 @@
+@import "../../style/variables/variables.scss";
+
+#foo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #one {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      padding: 0 1rem;
+    }
+
+    #name {
+      text-transform: capitalize;
+    }
+  }
+
+  #two {
+    margin-top: 0.5rem;
+
+    @media screen and(min-width: 768px) {
+      margin-top: 0;
+    }
+
+    span {
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        .tooltip {
+          display: block;
+        }
+      }
+    }
+
+    .icons {
+      margin: 0 1rem;
+    }
+
+    #pray {
+      color: $prayer-icon-pray;
+      cursor: pointer;
+    }
+
+    #read {
+      color: $prayer-icon-info;
+      cursor: pointer;
+    }
+
+    #report {
+      color: $prayer-icon-report;
+      cursor: pointer;
+    }
+
+    #hide {
+      color: $prayer-color;
+      cursor: pointer;
+    }
+
+    #prayer-trash {
+      color: $prayer-icon-trash;
+    }
+
+    #prayer-deleted {
+      color: $prayer-icon-restore;
+    }
+
+    #comment {
+      color: $prayer-icon-info;
+      animation: comment 1s infinite ease-in-out;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: default;
+    }
+
+    #celebrate {
+      color: $prayer-icon-info;
+      animation: celebrate 1s infinite ease-in-out;
+      position: absolute;
+      top: 1rem;
+      right: 0rem;
+    }
+  }
+}

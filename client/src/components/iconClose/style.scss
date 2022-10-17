@@ -1,0 +1,19 @@
+@import "../../style/variables/variables.scss";
+
+#close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.8rem;
+  color: $prayer-body-color;
+  cursor: pointer;
+
+  &:hover {
+    .tooltip {
+      display: block;
+      left: 0;
+    }
+  }
+}

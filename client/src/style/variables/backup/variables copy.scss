@@ -1,0 +1,99 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: #1affff;
+  --brown: #f53c3c;
+  --green: #55ff1a;
+  --orange: #ff6c1a;
+  --pink: #fa1aff;
+  --red: #ff1a1a;
+  --purple: #9a1aff;
+  --white: #fff;
+  --yellow: #edf200;
+}
+
+/* ----- basic colors ----- */
+$black: var(--black);
+$light-black: var(--light-black);
+$blue: var(--blue);
+$brown: var(--brown);
+$green: var(--green);
+$orange: var(--orange);
+$pink: var(--pink);
+$red: var(--red);
+$purple: var(--purple) ff;
+$yellow: var(--yellow);
+$white: var(--white);
+
+/* ----- ground colors ----- */
+$primary-bg: var(--black);
+$secondary-bg: var(--light-black);
+
+/* ----- basic button ----- */
+$button-basic-color: var(--black);
+$button-basic-bg: var(--green);
+
+/* ----- nav ----- */
+$nav-bg: var(--black);
+$nav-color: var(--white);
+$nav-headers: var(--yellow);
+$nav-headers-hover: var(--green);
+$nav-sponsor-icon: var(--pink);
+$nav-width: 25rem;
+
+/* ----- profile ----- */
+$profile-sponsor-icon: var(--pink);
+$profile-user-name: var(--green);
+$profile-sponsor: var(--pink);
+$profile-close-btn: var(--white);
+$profile-member-statistics: var(--green);
+
+/* ----- friendship ----- */
+$friendship-cancel-bg: var(--orange);
+$friendship-cancel-color: var(--black);
+$friendship-reject-bg: var(--orange);
+$friendship-reject-color: var(--black);
+$friendship-accept-bg: var(--green);
+$friendship-accept-color: var(--black);
+$friendship-request-bg: var(--blue);
+$friendship-request-color: var(--black);
+$friendship-unfriend-bg: var(--orange);
+$friendship-unfriend-color: var(--black);
+
+/* ----- donate ----- */
+$donate-btn-bg: var(--green);
+$donate-btn-color: var(--black);
+
+/* ----- prayer ----- */
+$prayer-bg: var(--black);
+$prayer-color: var(--white);
+$prayer-title-color: var(--yellow);
+$prayer-body-color: var(--white);
+$prayer-icon-report: var(--red);
+$prayer-icon-pray: var(--green);
+$prayer-icon-restore: var(--green);
+$prayer-icon-info: var(--blue);
+$prayer-icon-trash: var(--red);
+$prayer-icon-answer: var(--green);
+
+/* ----- tags ----- */
+$prayer-tag-bg: var(--white);
+$prayer-tag-color: var(--black);
+
+/* ----- ranking ----- */
+$ranking-header-color: var(--yellow);
+$ranking-body-color: var(--white);
+
+/* ----- verse ----- */
+$verse-bg: var(--black);
+$verse-color: var(--white);
+
+/* ----- scrollbar ----- */
+$scrollbar-track-bg: var(--white);
+$scrollbar-thumb-bg: var(--blue);
+
+/* ----- tooltip ----- */
+$tooltip-bg: var(--black);
+$tooltip-color: var(--yellow);
+$tooltip-border: var(--white);

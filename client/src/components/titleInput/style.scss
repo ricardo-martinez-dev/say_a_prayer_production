@@ -1,0 +1,22 @@
+@import "../../style/variables/variables.scss";
+
+p {
+  font-size: 1.4rem;
+  color: $body-color;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  background: #fff;
+  color: #000;
+  border: 0.1rem solid $body-color;
+}

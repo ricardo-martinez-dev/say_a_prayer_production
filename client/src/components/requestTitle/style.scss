@@ -1,0 +1,14 @@
+@import "../../style/variables/variables.scss";
+
+h3.request-title {
+  letter-spacing: 0.1rem;
+}
+
+h3.request-title {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+  color: $prayer-title-color;
+  text-transform: capitalize;
+  word-break: keep-all;
+}

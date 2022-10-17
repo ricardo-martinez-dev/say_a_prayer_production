@@ -1,0 +1,233 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#new-post {
+  height: 100%;
+}
+#new-post #content {
+  padding-top: 5rem;
+  background: var(--elem-bg);
+  border-radius: 1rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: emptyBox 5s ease infinite;
+          animation: emptyBox 5s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem;
+}
+#new-post #content #not-allowed {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--elem-bg);
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #new-post #content #not-allowed > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+#new-post #content #not-allowed p.non-premium {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  line-height: 3rem;
+  color: var(--body-color);
+  display: flex;
+  justify-content: space-around;
+}
+#new-post #content #not-allowed button.donate {
+  font-size: 1.3rem;
+  background: var(--button-basic-bg);
+  font-weight: 600;
+  color: var(--button-basic-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#new-post #content #not-allowed button.donate:hover {
+  padding: 0.5rem 1.5rem;
+}
+#new-post #content form {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--body-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #new-post #content form {
+    width: 60rem;
+  }
+}
+#new-post #content form textarea,
+#new-post #content form input {
+  border-radius: 0.5rem;
+}
+#new-post #content #new-request-message {
+  color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 30rem;
+  background: var(--body-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 768px) {
+  #new-post #content #new-request-message {
+    width: 60rem;
+  }
+}
+#new-post #content #new-request-message h3,
+#new-post #content #new-request-message p#new-post-thanks {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+#new-post #content #new-request-message h3 {
+  font-size: 1.8rem;
+}
+#new-post #content #new-request-message p#new-post-thanks {
+  font-size: 1.5rem;
+}
+#new-post #content #new-request-message button {
+  background: var(--button-basic-bg);
+  color: var(--button-basic-color);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#new-post #content #new-request-message button span {
+  margin: 0 1rem;
+}
+#new-post #content #new-request-message button:hover {
+  padding: 0.5rem 1.5rem;
+}/*# sourceMappingURL=style.css.map */

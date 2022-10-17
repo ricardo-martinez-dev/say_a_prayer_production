@@ -1,0 +1,209 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#notifications {
+  #notifications-prayers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include safari("margin-bottom", 2rem);
+    @media screen and(min-width: 768px) {
+      width: 50rem;
+    }
+
+    p#message {
+      color: $prayer-body-color;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    ul#notifications-friendship-request {
+      @include safari("margin-bottom", 2rem);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background: $prayer-bg;
+        padding: 1rem;
+        color: $prayer-body-color;
+
+        #top {
+          p#friendship-request-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            font-size: 1.4rem;
+            color: $prayer-body-color;
+          }
+        }
+
+        #bottom {
+          display: flex;
+          justify-content: space-between;
+
+          #info {
+            display: flex;
+            gap: 0rem;
+            @include safari("margin-right", 0rem);
+
+            #left {
+              #avatar {
+                width: 5rem;
+                height: 5rem;
+              }
+            }
+
+            #middle {
+              display: flex;
+              flex-direction: column;
+
+              ul {
+                li {
+                  @include safari("margin-right", 1rem);
+                  list-style: none;
+                  color: $prayer-body-color;
+                  font-size: 1.1rem;
+                  letter-spacing: 0.1rem;
+                  display: flex;
+                  flex-direction: row;
+                  gap: 1rem;
+                  padding-top: 0;
+                  padding-bottom: 0.5rem;
+
+                  span {
+                    line-height: 1.6rem;
+                    width: 100%;
+                    text-transform: capitalize;
+
+                    &:first-of-type {
+                      font-weight: bold;
+                      width: 10rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          #right {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            button {
+              background: $body-bg;
+              color: $prayer-bg;
+              font-size: 1rem;
+              padding: 0.5rem 1rem;
+              cursor: pointer;
+              border-radius: 0.5rem;
+              font-weight: 600;
+              text-transform: capitalize;
+              letter-spacing: 0.1rem;
+            }
+
+            button#accept {
+              color: $prayer-icon-pray;
+              border: 0.1rem solid $prayer-icon-pray;
+            }
+
+            button#reject {
+              color: $prayer-icon-trash;
+              border: 0.1rem solid $prayer-icon-trash;
+            }
+          }
+        }
+      }
+    }
+
+    ul#notifications-prayers-list {
+      @include safari("margin-bottom", 2rem);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li.notifications-prayer {
+        @include safari("margin-bottom", 1rem);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background: $prayer-bg;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        p#notifications-header {
+          color: $prayer-body-color;
+        }
+
+        #blah {
+          display: flex;
+          gap: 1rem;
+          width: 100%;
+
+          @include safari("margin-right", 1rem);
+
+          #avatar {
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+          }
+
+          #content {
+            display: flex;
+            width: 100%;
+
+            ul {
+              @include safari("margin-bottom", 0.5rem);
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              li {
+                @include safari("margin-right", 1rem);
+                list-style: none;
+                color: $prayer-body-color;
+                font-size: 1.1rem;
+                letter-spacing: 0.1rem;
+                display: flex;
+                gap: 1rem;
+
+                span {
+                  line-height: 1.6rem;
+                  width: 100%;
+
+                  &:first-of-type {
+                    font-weight: bold;
+                    width: 8rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        p.buttons {
+          display: flex;
+          justify-content: space-around;
+          width: 15rem;
+          margin: 0.5rem 0 0 0;
+
+          span {
+            #like {
+              color: $prayer-body-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

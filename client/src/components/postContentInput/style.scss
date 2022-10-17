@@ -1,0 +1,27 @@
+@import "../../style/variables/variables.scss";
+
+p#post-content-input {
+  font-size: 1.4rem;
+  color: $body-color;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 500;
+}
+
+textarea#request-body-textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  background: #fff;
+  color: #000;
+  border: 0.1rem solid $body-color;
+  resize: vertical;
+  font-weight: 600;
+
+  @media screen and(min-width: 1050px) {
+    min-height: 20rem;
+    max-height: 40rem;
+  }
+}

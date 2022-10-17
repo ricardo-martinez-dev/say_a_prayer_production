@@ -1,0 +1,50 @@
+@import "../../style/variables/variables.scss";
+
+#privacy {
+  #privacy-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .privacy-options {
+      width: 60rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li {
+          list-style: none;
+          margin: 1rem 0;
+          letter-spacing: 0.1rem;
+
+          span {
+            color: $body-color;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+
+            .selected {
+              color: black;
+              font-size: 1.3rem;
+            }
+
+            .selector {
+              background: $body-color;
+              color: $body-bg;
+              width: 1.5rem;
+              height: 1.5rem;
+              margin-right: 1rem;
+              border-radius: 0.5rem;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

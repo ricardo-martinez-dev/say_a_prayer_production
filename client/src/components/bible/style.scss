@@ -1,0 +1,87 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#bible {
+  #selection {
+    display: flex;
+    gap: 3rem;
+
+    @include safari("margin-right", 3rem);
+
+    #book-list,
+    #chapter-list {
+      #books {
+        width: 15rem;
+      }
+
+      #chapters {
+        width: 6rem;
+      }
+
+      #books,
+      #chapters {
+        padding: 0.5rem;
+        text-align: center;
+        color: $body-color;
+        cursor: pointer;
+        text-transform: capitalize;
+        border: 0.1rem solid $body-color;
+        background: $body-bg;
+
+        @include scrollbar;
+
+        option {
+          padding: 1rem 0;
+        }
+      }
+    }
+  }
+
+  #chapter {
+    color: $body-color;
+    padding: 3rem;
+
+    width: 100%;
+
+    @media screen and(min-width: 768px) {
+      width: 70rem;
+    }
+
+    h2#chapter-header {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      #chap-title-end {
+        font-size: 1.5rem;
+      }
+
+      .arrows {
+        cursor: pointer;
+        width: 2rem;
+      }
+    }
+
+    h3#chapter-num {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      li {
+        letter-spacing: 0.1rem;
+        list-style: none;
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 3rem;
+      }
+      li.chapter-header {
+        font-weight: bold;
+      }
+    }
+  }
+}

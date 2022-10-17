@@ -1,0 +1,114 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+
+  .home-prayer {
+    margin-bottom: 2rem;
+  }
+
+  #home-holder {
+    width: 100%;
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      width: 62rem;
+    }
+
+    #loved-posts {
+      width: 62rem;
+
+      ul {
+        width: 100%;
+
+        li {
+          @include safari("margin-right", 1rem);
+          width: 100%;
+          list-style: none;
+          color: $ranking-body-color;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: space-between;
+          margin: 1.5rem 0;
+
+          #avatar {
+            width: 2.5rem;
+            height: 2.5rem;
+            cursor: pointer;
+          }
+
+          span#post-title {
+            width: 100%;
+            padding-left: 0.5rem;
+            #name {
+              width: auto;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #ranking,
+    #tags {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      @include safari("margin-right", 2rem);
+      @include safari("margin-bottom", 2rem);
+
+      .tags {
+        background: $ranking-body-bg;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+          width: 30rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+          letter-spacing: 0.1rem;
+          text-align: center;
+          font-weight: 600;
+          color: $ranking-header-color;
+          letter-spacing: 0.1rem;
+          line-height: 2.5rem;
+        }
+
+        ul {
+          width: 100%;
+          li {
+            list-style: none;
+            color: $ranking-body-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+            font-size: 1.3rem;
+            padding-right: 1.5rem;
+
+            span {
+              text-transform: lowercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

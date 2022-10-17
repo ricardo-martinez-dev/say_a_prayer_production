@@ -1,0 +1,320 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#notifications #notifications-prayers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #notifications #notifications-prayers {
+    width: 50rem;
+  }
+}
+#notifications #notifications-prayers p#message {
+  color: var(--elem-color);
+  display: flex;
+  justify-content: space-around;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-friendship-request > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background: var(--elem-bg);
+  padding: 1rem;
+  color: var(--elem-color);
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #top p#friendship-request-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  color: var(--elem-color);
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info {
+  display: flex;
+  gap: 0rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info > *:not(:last-child) {
+    margin-right: 0rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #left #avatar {
+  width: 5rem;
+  height: 5rem;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #middle {
+  display: flex;
+  flex-direction: column;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #middle ul li {
+  list-style: none;
+  color: var(--elem-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #middle ul li > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #middle ul li span {
+  line-height: 1.6rem;
+  width: 100%;
+  text-transform: capitalize;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #info #middle ul li span:first-of-type {
+  font-weight: bold;
+  width: 10rem;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #right button {
+  background: var(--body-bg);
+  color: var(--elem-bg);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #right button#accept {
+  color: var(--icon-prayer);
+  border: 0.1rem solid var(--icon-prayer);
+}
+#notifications #notifications-prayers ul#notifications-friendship-request li #bottom #right button#reject {
+  color: var(--icon-trash);
+  border: 0.1rem solid var(--icon-trash);
+}
+#notifications #notifications-prayers ul#notifications-prayers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-prayers-list > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: var(--elem-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer p#notifications-header {
+  color: var(--elem-color);
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #avatar {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content {
+  display: flex;
+  width: 100%;
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul li {
+  list-style: none;
+  color: var(--elem-color);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  gap: 1rem;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul li > *:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul li span {
+  line-height: 1.6rem;
+  width: 100%;
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer #blah #content ul li span:first-of-type {
+  font-weight: bold;
+  width: 8rem;
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer p.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
+  margin: 0.5rem 0 0 0;
+}
+#notifications #notifications-prayers ul#notifications-prayers-list li.notifications-prayer p.buttons span #like {
+  color: var(--elem-color);
+}/*# sourceMappingURL=style.css.map */

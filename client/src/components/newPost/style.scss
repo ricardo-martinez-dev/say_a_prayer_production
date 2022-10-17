@@ -1,0 +1,127 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#new-post {
+  height: 100%;
+
+  #content {
+    padding-top: 5rem;
+    background: $prayer-bg;
+    border-radius: 1rem;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: emptyBox 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+
+    #not-allowed {
+      @include safari("margin-right", 2rem);
+      max-width: 50rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      border-radius: 1rem;
+      padding: 1rem;
+      background: $prayer-bg;
+
+      p.non-premium {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        line-height: 3rem;
+        color: $body-color;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      button.donate {
+        font-size: 1.3rem;
+        background: $donate-btn-bg;
+        font-weight: 600;
+        color: $donate-btn-color;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+    }
+
+    form {
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $body-bg;
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @media screen and(min-width: 768px) {
+        width: 60rem;
+      }
+
+      textarea,
+      input {
+        border-radius: 0.5rem;
+      }
+    }
+
+    #new-request-message {
+      color: $body-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      width: 30rem;
+      background: $body-bg;
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @media screen and(min-width: 768px) {
+        width: 60rem;
+      }
+
+      h3,
+      p#new-post-thanks {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p#new-post-thanks {
+        font-size: 1.5rem;
+      }
+
+      button {
+        background: $donate-btn-bg;
+        color: $donate-btn-color;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        transition: 0.2s;
+
+        span {
+          margin: 0 1rem;
+        }
+
+        &:hover {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+    }
+  }
+}

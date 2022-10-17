@@ -1,0 +1,182 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#themes #themes-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+#themes #themes-holder #chosen-theme {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  #themes #themes-holder #chosen-theme > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+#themes #themes-holder #chosen-theme #name {
+  font-size: 1.5rem;
+  color: var(--body-color);
+}
+#themes #themes-holder #chosen-theme #theme {
+  width: 2rem;
+  height: 2rem;
+  background: var(--elem-bg);
+  border: 0.1rem solid var(--body-color);
+}
+#themes #themes-holder .theme-options {
+  width: 100%;
+  max-width: 50rem;
+}
+#themes #themes-holder .theme-options ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#themes #themes-holder .theme-options ul .border {
+  border: 0.1rem solid var(--body-color);
+}
+#themes #themes-holder .theme-options ul li.chosen-theme {
+  background: var(--elem-bg);
+}
+#themes #themes-holder .theme-options ul li {
+  border-radius: 0.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: var(--body-bg);
+  border: 0.1rem solid var(--body-color);
+  cursor: pointer;
+}
+#themes #themes-holder .theme-options ul li span.theme-selector {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #000;
+}
+#themes #themes-holder .theme-options ul li span.theme-name {
+  color: var(--body-color);
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=style.css.map */

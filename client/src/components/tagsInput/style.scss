@@ -1,0 +1,11 @@
+@import "../../style/variables/variables.scss";
+
+input {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  background: #fff;
+  color: #000;
+  border: 0.1rem solid $body-color;
+}

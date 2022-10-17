@@ -1,0 +1,100 @@
+@import "../../style/variables/variables.scss";
+
+#edit-user-info {
+  padding: 1rem;
+
+  /* tablet */
+  @media screen and (min-width: 768px) {
+    padding: 1rem 4rem;
+  }
+
+  #edit-user-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+
+    #close {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.8rem;
+      color: $profile-close-btn;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      cursor: pointer;
+    }
+
+    #user-info {
+      background: black;
+      width: 90vw;
+      border-radius: 1rem;
+
+      @media screen and (min-width: 768px) {
+        width: 50rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+
+        p.edit-info {
+          color: white;
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          text-transform: capitalize;
+          width: 100%;
+          letter-spacing: 0.1rem;
+          font-weight: 500;
+        }
+
+        input {
+          margin-bottom: 2rem;
+          width: 100%;
+          letter-spacing: 0.1rem;
+          padding: 0.5rem;
+          text-transform: capitalize;
+          font-weight: 600;
+
+          &:focus {
+            outline-color: $prayer-icon-report;
+          }
+        }
+
+        input#bday {
+          text-transform: lowercase;
+        }
+
+        #buttons {
+          button#save-user-info,
+          button#cancel-user-info {
+            letter-spacing: 0.1rem;
+            margin: 0 1rem;
+            font-size: 1.3rem;
+            background: #151515;
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: 600;
+          }
+
+          button#save-user-info {
+            color: $prayer-icon-pray;
+            border: 0.1rem solid $prayer-icon-pray;
+          }
+
+          button#cancel-user-info {
+            color: $prayer-icon-report;
+            border: 0.1rem solid $prayer-icon-report;
+          }
+        }
+      }
+    }
+  }
+}

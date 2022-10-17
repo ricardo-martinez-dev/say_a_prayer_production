@@ -1,0 +1,213 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#spinner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  margin: 1rem 0;
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  /* tablet */
+  /* pc */
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .box > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .box > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    width: 50rem;
+  }
+}
+.box .foo {
+  background: var(--elem-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* tablet */
+}
+.box .foo #avatar {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.box .foo #tags {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.box .foo #tags .tag {
+  background: var(--elem-color);
+  border-radius: 0.4rem;
+  color: var(--elem-bg);
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+}
+.box .foo .title {
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+  height: 3.2rem;
+  color: var(--prayer-title);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.box .foo .description {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  max-height: 10rem;
+  overflow: auto;
+  color: var(--elem-color);
+  overflow: hidden;
+  word-break: keep-all;
+}
+.box .foo .description::-webkit-scrollbar {
+  width: 0.2rem;
+}
+.box .foo .description::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+}
+.box .foo .description::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+}/*# sourceMappingURL=style.css.map */

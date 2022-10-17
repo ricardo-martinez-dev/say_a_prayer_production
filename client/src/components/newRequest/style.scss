@@ -1,0 +1,88 @@
+@import "../../style/variables/variables.scss";
+
+#new-request {
+  height: 100%;
+
+  #content {
+    padding-top: 5rem;
+    background: $prayer-bg;
+    border-radius: 1rem;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: emptyBox 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+
+    form {
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $body-bg;
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @media screen and(min-width: 768px) {
+        width: 60rem;
+      }
+
+      textarea,
+      input {
+        border-radius: 0.5rem;
+      }
+    }
+
+    #new-request-message {
+      color: $body-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      width: 30rem;
+      background: $body-bg;
+      padding: 1rem;
+      border-radius: 1rem;
+
+      @media screen and(min-width: 768px) {
+        width: 60rem;
+      }
+
+      h3,
+      p#new-req-thanks {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p#new-req-thanks {
+        font-size: 1.5rem;
+      }
+
+      button {
+        background: $donate-btn-bg;
+        color: $donate-btn-color;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        transition: 0.2s;
+
+        span {
+          margin: 0 1rem;
+        }
+
+        &:hover {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+    }
+  }
+}

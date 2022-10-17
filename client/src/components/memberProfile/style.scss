@@ -1,0 +1,76 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#member-profile {
+  padding: 1rem 3rem;
+
+  /* tablet */
+  @media screen and (min-width: 768px) {
+    padding: 1rem 4rem;
+  }
+
+  .gradient-border {
+    padding: 0.2rem;
+    border-radius: 1rem;
+    width: 100%;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: emptyBox 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #top-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background: $prayer-bg;
+    padding: 1rem;
+    flex-direction: column;
+    position: relative;
+    border-radius: 1rem;
+
+    @media screen and(min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  #bottom-box {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32rem;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-evenly;
+      width: 64rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .more {
+        cursor: pointer;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        color: $prayer-icon-info;
+
+        &:hover {
+          color: $nav-headers;
+        }
+      }
+    }
+  }
+}

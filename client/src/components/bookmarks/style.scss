@@ -1,0 +1,170 @@
+@import "../../style/mixins/mixins.scss";
+@import "../../style/variables/variables.scss";
+
+#bookmarks {
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include scrollbar;
+
+  h2 {
+    color: $body-color;
+    font-size: 2rem;
+  }
+
+  #explore-area {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and(min-width: 768px) {
+      max-width: 50rem;
+    }
+
+    p#message {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .explore-prayer {
+      width: 100%;
+      background: $prayer-bg;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      position: relative;
+
+      #info {
+        display: flex;
+        height: 7rem;
+        padding: 0.5rem;
+
+        @media screen and (min-width: 768px) {
+          height: 6rem;
+        }
+
+        #avatar {
+          width: 5rem;
+          height: 5rem;
+          cursor: pointer;
+        }
+
+        #user-info {
+          height: 100%;
+          width: 100%;
+          padding: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 1.1rem;
+          color: $prayer-body-color;
+        }
+      }
+
+      #prayer {
+        margin-top: 1rem;
+        padding: 0.5rem;
+
+        p {
+          font-size: 1.3rem;
+          line-height: 2rem;
+          color: $prayer-body-color;
+        }
+      }
+
+      .user-prayer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        textarea {
+          font-size: 1.2rem;
+          line-height: 2rem;
+          height: 5rem;
+          width: 100%;
+          overflow: auto;
+          background-color: $prayer-bg;
+          color: $prayer-bg;
+          border: 0.1rem solid $prayer-color;
+          resize: none;
+          letter-spacing: 0.1rem;
+          padding: 0.5rem;
+
+          &:focus {
+            outline-color: $prayer-icon-pray;
+          }
+
+          @include mini-scrollbar;
+        }
+
+        #buttons {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+
+          button {
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            padding: 0.2rem 0.5rem;
+            letter-spacing: 0.1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+          }
+
+          .send {
+            background: $prayer-icon-pray;
+          }
+
+          .cancel {
+            background: $prayer-icon-trash;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes comment {
+  0% {
+    color: #edf200;
+  }
+  50% {
+    color: #1affff;
+  }
+  100% {
+    color: #edf200;
+  }
+}
+
+@keyframes celebrate {
+  0% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+  50% {
+    transform: rotateZ(90deg);
+    color: #1affff;
+  }
+  100% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+}

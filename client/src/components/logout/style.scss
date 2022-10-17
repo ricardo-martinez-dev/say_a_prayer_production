@@ -1,0 +1,40 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#logout {
+  color: $body-color;
+
+  #logout-section {
+    @include safari("margin-bottom", 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    background: $prayer-bg;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+
+    button {
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      transition: 0.2s;
+      color: $body-bg;
+      background: $body-color;
+      border: 0.1rem solid $body-bg;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background: $body-bg;
+        color: $body-color;
+        border: 0.1rem solid $body-color;
+      }
+    }
+  }
+}

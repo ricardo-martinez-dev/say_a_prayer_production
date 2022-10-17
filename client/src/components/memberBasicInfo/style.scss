@@ -1,0 +1,130 @@
+@import "../../style/variables/variables.scss";
+
+#basic-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1050px) {
+  }
+
+  #avatar,
+  #change-picture {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #user-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
+    #change-pic {
+      margin-bottom: 0.5rem;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0rem;
+      }
+
+      button#change-pic {
+        color: $prayer-color;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        background: transparent;
+        border-radius: 0.4rem;
+        border: 0.1rem solid $prayer-color;
+        padding: 0.3rem;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  #user-data {
+    margin-left: 1rem;
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      li {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        list-style: none;
+        color: $prayer-body-color;
+        padding: 0.3rem;
+
+        span#sponsor {
+          color: $profile-sponsor-icon;
+
+          .icon {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      button#sponsor {
+        background: $profile-sponsor;
+        font-weight: 600;
+        padding: 0.2rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      span#user-name {
+        color: $profile-user-name;
+      }
+
+      span#edit-user-info {
+        cursor: pointer;
+        position: relative;
+        margin-left: 1rem;
+        color: $prayer-icon-info;
+
+        &:hover {
+          .tooltip {
+            display: block;
+          }
+        }
+
+        .tooltip {
+          background: $tooltip-bg;
+          font-size: 1.2rem;
+          color: $tooltip-color;
+          text-align: center;
+          border: 0.1rem solid $tooltip-border;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          margin-top: 1rem;
+          position: absolute;
+          bottom: 2.5rem;
+          left: -1rem;
+          display: none;
+          width: 11rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}

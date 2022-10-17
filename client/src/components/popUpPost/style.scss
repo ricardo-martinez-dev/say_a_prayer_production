@@ -1,0 +1,170 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#popup-post {
+  height: 100vh;
+  background: $body-bg;
+  padding: 1rem;
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  #post-popup-holder {
+    @include mini-scrollbar;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    #content {
+      width: 100%;
+      margin-top: 2rem;
+      padding: 2rem;
+      background: $prayer-bg;
+      position: relative;
+
+      @media screen and(min-width: 768px) {
+        width: 50rem;
+      }
+
+      #close {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        color: $prayer-body-color;
+
+        .tooltip {
+          bottom: -0.5rem;
+          left: 2rem;
+        }
+      }
+
+      h3#post-title {
+        font-size: 2.2rem;
+        color: $prayer-body-color;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        word-break: keep-all;
+      }
+    }
+
+    #info {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+      align-items: flex-start;
+
+      #user {
+        display: flex;
+        width: 50%;
+
+        #avatar {
+          width: 4rem;
+          height: 4rem;
+          margin-right: 1rem;
+        }
+
+        #info {
+          font-size: 1.3rem;
+          list-style: none;
+          color: $prayer-body-color;
+        }
+      }
+
+      #post {
+        width: 50%;
+        overflow: visible;
+        display: flex;
+        justify-content: space-around;
+
+        #info {
+          width: 100%;
+
+          #foo {
+            @include safari("margin-right", 0.5rem);
+            width: 100%;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: space-between;
+            color: $prayer-body-color;
+
+            #icons {
+              #bar,
+              #remove {
+                &:hover {
+                  .tooltip {
+                    display: block;
+                  }
+                }
+
+                .tooltip {
+                  background: $tooltip-bg;
+                  font-size: 1.2rem;
+                  color: $tooltip-color;
+                  border: 0.1rem solid $tooltip-border;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  margin-top: 1rem;
+                  position: absolute;
+                  bottom: 2rem;
+                  left: -5rem;
+                  display: none;
+                  width: 11rem;
+                  letter-spacing: 0.1rem;
+                  text-align: center;
+                }
+              }
+            }
+
+            #date,
+            #icons {
+              cursor: pointer;
+              position: relative;
+              list-style: none;
+              display: flex;
+
+              span.capitalize {
+                text-transform: capitalize;
+              }
+
+              #bar {
+                #like {
+                  color: $body-color;
+                }
+              }
+            }
+
+            #date {
+              width: 100%;
+              font-size: 1.1rem;
+              justify-content: space-around;
+
+              @media screen and (min-width: 768px) {
+                width: 70%;
+              }
+            }
+
+            #icons {
+              width: 100%;
+              justify-content: space-around;
+              font-size: 1.3rem;
+
+              @media screen and (min-width: 768px) {
+                width: 30%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../style/variables/variables.scss";
+
+.received-prayers {
+  display: flex;
+  color: $prayer-color;
+  justify-content: space-between;
+  width: 100%;
+  background: $prayer-bg;
+  margin-bottom: 2rem;
+
+  flex-direction: column;
+
+  #user {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    width: 100%;
+
+    #avatar {
+      margin-right: 1rem;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    #user-info {
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        li {
+          font-size: 1.2rem;
+          list-style: none;
+          letter-spacing: 0.1rem;
+          padding: 0.3rem 0;
+
+          span {
+            &:first-of-type {
+              margin-right: 1rem;
+            }
+            &:nth-of-type(2) {
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #prayer {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+  }
+}

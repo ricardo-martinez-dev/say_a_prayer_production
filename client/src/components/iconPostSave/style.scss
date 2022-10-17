@@ -1,0 +1,42 @@
+@import "../../style/variables/variables.scss";
+
+span#remove {
+  color: $prayer-icon-trash;
+}
+
+#bookmark {
+  color: $prayer-icon-pray;
+}
+
+span#remove,
+span#bookmark {
+  cursor: pointer;
+  text-align: center;
+
+  span {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .tooltip {
+        display: block;
+      }
+    }
+
+    .tooltip {
+      background: $tooltip-bg;
+      font-size: 1.2rem;
+      color: $tooltip-color;
+      border: 0.1rem solid $tooltip-border;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      position: absolute;
+      bottom: 2.5rem;
+      left: -5rem;
+      display: none;
+      width: 11rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

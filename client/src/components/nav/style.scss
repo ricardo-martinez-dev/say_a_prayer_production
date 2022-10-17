@@ -1,0 +1,176 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+@keyframes hide-mobile {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
+@keyframes hide {
+  from {
+    left: 0rem;
+  }
+  to {
+    left: -$nav-width;
+  }
+}
+
+.hide-nav {
+  animation: hide-mobile 0.2s forwards;
+
+  @media screen and(min-width: 768px) {
+    animation: hide 0.2s forwards;
+  }
+}
+
+@keyframes show-mobile {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0rem;
+  }
+}
+
+@keyframes show {
+  from {
+    left: -$nav-width;
+  }
+  to {
+    left: 0rem;
+  }
+}
+
+.show-nav {
+  animation: show-mobile 0.2s forwards;
+
+  @media screen and(min-width: 768px) {
+    animation: show 0.2s forwards;
+  }
+}
+
+nav {
+  width: 100vw;
+
+  @media screen and (min-width: 768px) {
+    width: $nav-width;
+  }
+
+  height: 100vh;
+  background: $nav-bg;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: $nav-color;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  transition: 0.5s;
+
+  z-index: 9999999999999;
+
+  @include mini-scrollbar;
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+
+    #nav-close {
+      position: absolute;
+      left: 1rem;
+
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1050px) {
+    left: 0rem;
+  }
+
+  #nav-section {
+    margin-bottom: 2rem;
+
+    p#nav-section {
+      padding-top: 0.5rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      color: $nav-headers;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    ul {
+      .notifications-bright {
+        opacity: 1;
+      }
+
+      .notifications-fade {
+        opacity: 0.3;
+      }
+
+      li {
+        list-style: none;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        transition: 0.2s;
+        font-weight: 400;
+        font-size: 1.2rem;
+
+        display: flex;
+        align-items: center;
+
+        .notifications {
+          animation: notifications 2s ease-in-out infinite;
+        }
+
+        span.icon {
+          margin-right: 1rem;
+        }
+
+        .pulsate {
+          color: $nav-sponsor-icon;
+          animation: pulsate 2s ease-in-out infinite;
+        }
+
+        &:hover {
+          color: $nav-hover;
+        }
+      }
+    }
+  }
+}
+
+@keyframes pulsate {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes notifications {
+  50% {
+    color: $prayer-icon-pray;
+  }
+  100% {
+    color: $prayer-color;
+  }
+}

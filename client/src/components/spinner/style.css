@@ -1,0 +1,215 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+@-webkit-keyframes ldio-9p5svcaz1mm {
+  0% {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translateZ(0) scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+@keyframes ldio-9p5svcaz1mm {
+  0% {
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translateZ(0) scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+}
+.ldio-9p5svcaz1mm div > div {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--body-color);
+  -webkit-animation: ldio-9p5svcaz1mm 1s linear infinite;
+          animation: ldio-9p5svcaz1mm 1s linear infinite;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(1) > div {
+  left: 148px;
+  top: 88px;
+  -webkit-animation-delay: -0.875s;
+          animation-delay: -0.875s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(1) {
+  transform: rotate(0deg);
+  transform-origin: 160px 100px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(2) > div {
+  left: 130px;
+  top: 130px;
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: 142px 142px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(3) > div {
+  left: 88px;
+  top: 148px;
+  -webkit-animation-delay: -0.625s;
+          animation-delay: -0.625s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(3) {
+  transform: rotate(90deg);
+  transform-origin: 100px 160px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(4) > div {
+  left: 46px;
+  top: 130px;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(4) {
+  transform: rotate(135deg);
+  transform-origin: 58px 142px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(5) > div {
+  left: 28px;
+  top: 88px;
+  -webkit-animation-delay: -0.375s;
+          animation-delay: -0.375s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(5) {
+  transform: rotate(180deg);
+  transform-origin: 40px 100px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(6) > div {
+  left: 46px;
+  top: 46px;
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(6) {
+  transform: rotate(225deg);
+  transform-origin: 58px 58px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(7) > div {
+  left: 88px;
+  top: 28px;
+  -webkit-animation-delay: -0.125s;
+          animation-delay: -0.125s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(7) {
+  transform: rotate(270deg);
+  transform-origin: 100px 40px;
+}
+
+.ldio-9p5svcaz1mm div:nth-child(8) > div {
+  left: 130px;
+  top: 46px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.ldio-9p5svcaz1mm > div:nth-child(8) {
+  transform: rotate(315deg);
+  transform-origin: 142px 58px;
+}
+
+.loadingio-spinner-spin-gylp1l3255 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: var(--body-bg);
+}
+
+.ldio-9p5svcaz1mm {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+
+.ldio-9p5svcaz1mm div {
+  box-sizing: content-box;
+}
+
+/* generated by https://loading.io/ *//*# sourceMappingURL=style.css.map */

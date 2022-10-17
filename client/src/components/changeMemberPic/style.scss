@@ -1,0 +1,23 @@
+@import "../../style/variables/variables.scss";
+
+#change-picture {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 1rem;
+
+  #lbl {
+    cursor: pointer;
+    cursor: pointer;
+    width: 10rem;
+    height: 10rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #load-pic {
+    display: none;
+  }
+}

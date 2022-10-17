@@ -1,0 +1,29 @@
+@import "../../style/variables/variables.scss";
+
+p#req-input {
+  font-size: 1.2rem;
+  color: $body-color;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+textarea#request-body-textarea {
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  background: #fff;
+  color: #000;
+  border: 0.1rem solid $body-color;
+  font-weight: 600;
+}
+
+textarea#request-body-textarea {
+  min-height: 20rem;
+  max-height: 40rem;
+  resize: vertical;
+}

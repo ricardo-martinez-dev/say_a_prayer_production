@@ -1,0 +1,29 @@
+{
+  "name": "say-a-prayer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon api.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^5.1.1",
+    "jimp": "^0.16.1",
+    "method-override": "^3.0.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^5.13.13",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2"
+  }
+}

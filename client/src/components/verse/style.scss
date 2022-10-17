@@ -1,0 +1,16 @@
+@import "../../style/variables/variables.scss";
+
+.verse {
+  font-size: 1.4rem;
+  color: $verse-color;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+  background: $verse-bg;
+  padding: 1rem;
+  line-height: 2.5rem;
+  width: 95%;
+
+  @media screen and (min-width: 768px) {
+    width: 62rem;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#tags {
+  @include safari("margin-right", 1rem);
+  @include mini-scrollbar-hor;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 1rem;
+    padding: 0.3rem;
+    background: $prayer-color;
+    color: $prayer-bg;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+
+    background: $prayer-tag-bg;
+    color: $prayer-tag-color;
+    border-radius: 0.4rem;
+    cursor: default;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../style/variables/variables.scss";
+
+#send-request {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+  background: $body-bg;
+  color: $prayer-icon-pray;
+  border: 0.1rem solid $prayer-icon-pray;
+
+  &:hover {
+    padding: 0.5rem 1.5rem;
+  }
+}

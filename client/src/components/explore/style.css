@@ -1,0 +1,211 @@
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+:root {
+  /* ----- basic colors ----- */
+  --black: #000;
+  --light-black: #151515;
+  --blue: rgb(26, 255, 255);
+  --brown: rgb(245, 60, 60);
+  --green: #55ff1a;
+  --orange: rgb(255, 108, 26);
+  --pink: rgb(250, 26, 255);
+  --red: rgb(255, 26, 26);
+  --purple: rgb(154, 26, 255);
+  --white: #fff;
+  --yellow: rgb(237, 242, 0);
+  /* --- elements --- */
+  --elem-color: #000;
+  --elem-bg: #000;
+  /* --- nav --- */
+  --nav-headers: #000;
+  --nav-hover: #000;
+  /* --- basic button --- */
+  --button-basic-color: #000;
+  --button-basic-bg: #000;
+  /* --- icons --- */
+  --sponsor-icon: #000;
+  --icon-info: #000;
+  --icon-prayer: #000;
+  --icon-report: #000;
+  --icon-trash: #000;
+  --icon-recover: #000;
+  --icon-view: #000;
+  --icon-answer: #000;
+  /* --- profile --- */
+  --profile-user-name: #000;
+  --profile-sponsor: #000;
+  --profile-close-btn: #000;
+  --profile-member-statistics: #000;
+  /* --- prayer --- */
+  --prayer-title: #000;
+  --prayer-loader: #000;
+  /* --- scrollbar --- */
+  --scrollbar-track-bg: #000;
+  --scrollbar-thumb-bg: #000;
+  /* --- body --- */
+  --body-bg: #000;
+  --body-color: #000;
+}
+
+/* ----- scrollbar ----- */
+/* ----- tooltip ----- */
+/* ----- ranking ----- */
+/* ----- verse ----- */
+/* ----- tags ----- */
+/* ----- prayer ----- */
+/* ----- profile ----- */
+/* ----- donate ----- */
+/* ----- nav ----- */
+/* ----- basic button ----- */
+/* ----- friendship ----- */
+#explore {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#explore::-webkit-scrollbar {
+  width: 0.5rem;
+}
+#explore::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+}
+#explore::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+}
+#explore h2 {
+  color: var(--body-color);
+  font-size: 2rem;
+}
+#explore #loader {
+  width: 100%;
+  height: 1rem;
+}
+#explore #explore-area {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  width: 95%;
+}
+@media screen and (min-width: 768px) {
+  #explore #explore-area {
+    width: 50rem;
+  }
+}
+#explore #explore-area .hide {
+  display: none;
+}
+#explore #explore-area .show {
+  display: flex;
+  flex-direction: column;
+}
+
+@-webkit-keyframes comment {
+  0% {
+    color: #edf200;
+  }
+  50% {
+    color: #1affff;
+  }
+  100% {
+    color: #edf200;
+  }
+}
+
+@keyframes comment {
+  0% {
+    color: #edf200;
+  }
+  50% {
+    color: #1affff;
+  }
+  100% {
+    color: #edf200;
+  }
+}
+@-webkit-keyframes celebrate {
+  0% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+  50% {
+    transform: rotateZ(90deg);
+    color: #1affff;
+  }
+  100% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+}
+@keyframes celebrate {
+  0% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+  50% {
+    transform: rotateZ(90deg);
+    color: #1affff;
+  }
+  100% {
+    transform: rotateZ(-90deg);
+    color: #edf200;
+  }
+}/*# sourceMappingURL=style.css.map */

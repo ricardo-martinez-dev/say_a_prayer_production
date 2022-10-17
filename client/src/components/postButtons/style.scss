@@ -1,0 +1,45 @@
+@import "../../style/variables/variables.scss";
+
+p.buttons {
+  width: 100%;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+
+  span {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      .tooltip {
+        display: block;
+      }
+    }
+  }
+
+  #prayer-info {
+    color: $prayer-icon-info;
+  }
+
+  #prayer-send {
+    color: $prayer-icon-pray;
+  }
+
+  #prayer-deleted {
+    color: $prayer-icon-restore;
+  }
+
+  #prayer-report {
+    color: $prayer-icon-report;
+  }
+
+  #prayer-trash {
+    color: $prayer-icon-trash;
+  }
+
+  #prayer-answer {
+    color: $prayer-icon-answer;
+  }
+}

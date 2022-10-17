@@ -1,0 +1,93 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#friendships {
+  width: 100%;
+
+  #friendships {
+    width: 100%;
+    position: relative;
+
+    h3#last-publications {
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+      width: 100%;
+      color: $body-color;
+
+      span {
+        margin: 0 0.5rem;
+      }
+
+      span#close-last-publications {
+        cursor: pointer;
+      }
+    }
+
+    #friends-list {
+      width: 100%;
+
+      ul.friend {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+
+        @include safari("margin-right", 2rem);
+        @include safari("margin-bottom", 2rem);
+
+        li {
+          display: flex;
+          gap: 1rem;
+          list-style: none;
+          width: 100%;
+          background: $prayer-bg;
+          padding: 0.5rem;
+          border-radius: 1rem;
+
+          @include safari("margin-right", 1rem);
+
+          @media screen and (min-width: 768px) {
+            width: calc(50% - 2rem);
+          }
+
+          cursor: pointer;
+
+          #image {
+            width: 5rem;
+            height: 5rem;
+
+            img {
+              width: 5rem;
+              height: 5rem;
+              object-fit: cover;
+              border-radius: 0.5rem;
+            }
+          }
+
+          #friendship-info {
+            width: 100%;
+
+            ul {
+              li {
+                color: $prayer-body-color;
+                list-style: none;
+                letter-spacing: 0.1rem;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+
+        .empty {
+          background: black;
+          @include grandient-animation;
+        }
+      }
+    }
+  }
+}

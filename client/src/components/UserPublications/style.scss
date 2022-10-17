@@ -1,0 +1,29 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#last-publications {
+  width: 100%;
+
+  #last-publications-holder {
+    width: 100%;
+    position: relative;
+
+    h3#last-publications {
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+      width: 100%;
+      color: $body-color;
+
+      span {
+        margin: 0 0.5rem;
+      }
+
+      span#close-last-publications {
+        cursor: pointer;
+      }
+    }
+  }
+}

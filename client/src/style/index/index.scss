@@ -1,0 +1,108 @@
+@import "../../style/mixins/mixins.scss";
+@import "../../style/variables/variables.scss";
+
+// font-family
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  background: $body-bg;
+  overflow-x: hidden;
+
+  @include scrollbar;
+}
+
+#nav-open {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  color: $body-color;
+  font-size: 1.8rem;
+  z-index: 9999999;
+}
+
+.sectionComponent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  @media screen and (min-width: 1050px) {
+    width: calc(100vw - #{$nav-width});
+  }
+
+  h2 {
+    color: $body-color;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    width: calc(100% - 5rem);
+    text-align: center;
+
+    @media screen and (min-width: 1050px) {
+      width: 100%;
+    }
+  }
+
+  p#message {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+#publications {
+  #publications-holder {
+    @include safari("margin-bottom", 2rem);
+    width: 95%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      width: 50rem;
+    }
+
+    @media screen and (min-width: 1050px) {
+      justify-content: space-evenly;
+    }
+
+    /* tablet */
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* pc */
+    @media screen and (min-width: 1050px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  #loader {
+    width: 100%;
+    height: 5rem;
+  }
+}

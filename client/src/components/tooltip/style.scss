@@ -1,0 +1,18 @@
+@import "../../style/variables/variables.scss";
+
+.tooltip {
+  position: absolute;
+  bottom: 2.5rem;
+  left: -5rem;
+  background: $tooltip-bg;
+  font-size: 1.2rem;
+  color: $tooltip-color;
+  border: 0.1rem solid $tooltip-border;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: none;
+  width: 11rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}

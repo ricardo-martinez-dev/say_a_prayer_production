@@ -1,0 +1,57 @@
+@import "../../style/variables/variables.scss";
+@import "../../style/mixins/mixins.scss";
+
+#friends {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  height: 5rem;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    .more {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      color: $prayer-icon-info;
+
+      &:hover {
+        color: $nav-headers;
+      }
+    }
+  }
+
+  #friends-holder {
+    height: 100%;
+
+    ul.friend {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      @include safari("margin-right", 1rem);
+
+      li {
+        list-style: none;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+}

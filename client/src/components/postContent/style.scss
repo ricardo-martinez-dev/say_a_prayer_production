@@ -1,0 +1,14 @@
+@import "../../style/variables/variables.scss";
+
+p#post-content {
+  font-size: 1.3rem;
+  color: $body-color;
+  color: $prayer-body-color;
+  width: 100%;
+  line-height: 2.3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  text-indent: 2rem;
+  text-align: justify;
+  word-break: keep-all;
+}
