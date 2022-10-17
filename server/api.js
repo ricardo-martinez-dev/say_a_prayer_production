@@ -15,13 +15,7 @@ app.use(
   })
 );
 
-const corsOptions = {
-  origin:
-    process.env.ENVIRONMENT === "dev"
-      ? "*"
-      : "",
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+const corsOptions = {};
 
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
