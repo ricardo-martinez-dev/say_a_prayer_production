@@ -19,16 +19,9 @@ const query = async (elem) => {
     const isRecruter = user_id === "62c87954db8aa92094e6c7b1";
 
     const validatedobj = {
-      fname: validation.validateShortString(elem.fname),
-      lname: validation.validateShortString(elem.lname),
-      bday: getBirthDay(elem.bday),
-      religion: validation.validateLongString(elem.religion),
-      denomination: validation.validateLongString(elem.denomination),
-      country: validation.validateLongString(elem.country),
-      languages: validation.validateLanguages(elem.languages),
-      password: isRecruter
-        ? await passHash.hashPassword("ProgrammingIsFun123!")
-        : await passHash.hashPassword(elem.password),
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
     };
 
     for (const [key, value] of Object.entries(validatedobj)) {
