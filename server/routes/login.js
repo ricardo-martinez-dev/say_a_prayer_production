@@ -7,12 +7,15 @@ const express = require("express");
 const router = express.Router();
 
 // ! Passowrd hashing
-// TODO : hash and unhash passwords
-
 async function query(obj) {
   try {
     const { email, password } = obj;
-    const user = await usr.User.findOne({ email });
+    const validatedObj = {
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+    }
+    const user = await usr.User.findOne(validatedObj);
 
     if (!user) {
       // usernot found
@@ -47,11 +50,12 @@ function checkoutSponsorshipValidity(result) {
     : true;
 }
 
-router.post("/", async (req, res) => {
-  const { email, password } = req.body;
-
-  const validEmail = validation.validateEmail(email);
-  const validPassword = validation.validatePassword(password);
+router.post("/", async (req, res) => {  
+  const validatedObj = {
+    // ----------- DELETED CODE HERE ----------- //
+    // ----------- DELETED CODE HERE ----------- //
+    // ----------- DELETED CODE HERE ----------- //
+  }
 
   try {
     if (!validPassword) {
@@ -59,10 +63,7 @@ router.post("/", async (req, res) => {
       return;
     }
 
-    const result = await query({
-      email: validEmail,
-      password: validPassword,
-    });
+    const result = await query(validatedObj);
 
     if (result.status && result.status == "fail") {
       res.send({ status: "error" });
