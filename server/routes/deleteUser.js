@@ -171,13 +171,17 @@ router.post("/", async (req, res) => {
 
 router.post("/permission", async (req, res) => {
   try {
-    const { user_id } = req.body;
-    const user = validation.validateId(user_id);
-
+    const validatedObj = {
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+    }
     const notAllowedToDelete = [
-      process.env.RECRUTER_ID, // ! recruter
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
+      // ----------- DELETED CODE HERE ----------- //
     ];
-    const allowDeletion = notAllowedToDelete.includes(user) ? false : true;
+    const allowDeletion = notAllowedToDelete.includes(validatedobj) ? false : true;
 
     res.status(200).json({ allowDeletion });
   } catch (error) {
